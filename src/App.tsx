@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, useLocation, Link } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
@@ -25,13 +25,10 @@ function ScrollToTop() {
 
 function App() {
     return (
-        <Router
-            basename={import.meta.env.BASE_URL}
-            future={{
-                v7_startTransition: true,
-                v7_relativeSplatPath: true
-            }}
-        >
+        <Router future={{
+            v7_startTransition: true,
+            v7_relativeSplatPath: true
+        }}>
             <ScrollToTop />
             <div className="app">
                 <Header />
@@ -73,9 +70,9 @@ function NotFoundPage() {
             <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem' }}>
                 The page you're looking for doesn't exist.
             </p>
-            <a href="/" className="btn btn-primary btn-medium">
+            <Link to="/" className="btn btn-primary btn-medium">
                 Go to Homepage
-            </a>
+            </Link>
         </div>
     );
 }
