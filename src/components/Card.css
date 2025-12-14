@@ -5,6 +5,8 @@
     padding: var(--space-xl);
     transition: all var(--transition-base);
     box-shadow: var(--md-elevation-1);
+    position: relative;
+    /* Ensure proper stacking context */
 }
 
 .card-hover {
