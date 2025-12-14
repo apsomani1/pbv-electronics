@@ -2,6 +2,7 @@ import React from 'react';
 import Section from '../../components/Section';
 import Card from '../../components/Card';
 import Button from '../../components/Button';
+import SEO from '../../components/SEO';
 import '../DivisionPageStyles.css';
 
 const IndustrialAutomationPage: React.FC = () => {
@@ -44,6 +45,10 @@ const IndustrialAutomationPage: React.FC = () => {
 
     return (
         <div className="division-page">
+            <SEO
+                title="Industrial Automation - PLC Basics & Control Panels"
+                description="PLC automation panels, VFD control cabinets, and industrial network solutions by PBV Electronics for manufacturing excellence."
+            />
             {/* Hero */}
             <Section background="gradient" className="division-hero">
                 <div className="division-hero-content">

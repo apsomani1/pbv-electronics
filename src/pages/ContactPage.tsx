@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Section from '../components/Section';
 import Button from '../components/Button';
 import emailjs from '@emailjs/browser';
+import SEO from '../components/SEO';
 import './ContactPage.css';
 
 interface FormData {
@@ -149,6 +150,10 @@ const ContactPage: React.FC = () => {
 
     return (
         <div className="contact-page">
+            <SEO
+                title="Contact PBV Electronics - Get in Touch"
+                description="Contact PBV Electronics for inquiries about energy controls, embedded systems, and industrial automation solutions. Email us at info@pbvelectronics.com."
+            />
             {/* Hero */}
             <Section background="gradient" className="contact-hero">
                 <div className="text-center">

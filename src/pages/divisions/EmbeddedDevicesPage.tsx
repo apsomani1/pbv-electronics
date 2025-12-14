@@ -2,6 +2,7 @@ import React from 'react';
 import Section from '../../components/Section';
 import Card from '../../components/Card';
 import Button from '../../components/Button';
+import SEO from '../../components/SEO';
 import '../DivisionPageStyles.css';
 
 const EmbeddedDevicesPage: React.FC = () => {
@@ -44,6 +45,10 @@ const EmbeddedDevicesPage: React.FC = () => {
 
     return (
         <div className="division-page">
+            <SEO
+                title="Embedded Devices - IoT & Custom Hardware"
+                description="Custom embedded systems, IoT gateways, smart meters, and industrial-grade electronics design services by PBV Electronics."
+            />
             {/* Hero */}
             <Section background="gradient" className="division-hero">
                 <div className="division-hero-content">

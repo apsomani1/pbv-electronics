@@ -2,6 +2,7 @@ import React from 'react';
 import Section from '../../components/Section';
 import Card from '../../components/Card';
 import Button from '../../components/Button';
+import SEO from '../../components/SEO';
 import '../DivisionPageStyles.css';
 
 const SoftwareSolutionsPage: React.FC = () => {
@@ -44,6 +45,10 @@ const SoftwareSolutionsPage: React.FC = () => {
 
     return (
         <div className="division-page">
+            <SEO
+                title="Software Solutions - Cloud & Mobile Platforms"
+                description="Cloud monitoring platforms, mobile apps, and dashboard solutions for industrial control and solar energy management by PBV Electronics."
+            />
             {/* Hero */}
             <Section background="gradient" className="division-hero">
                 <div className="division-hero-content">
