@@ -1,4 +1,4 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 import './Button.css';
 
 interface ButtonProps {
@@ -10,6 +10,7 @@ interface ButtonProps {
     disabled?: boolean;
     type?: 'button' | 'submit' | 'reset';
     className?: string;
+    target?: string;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -21,13 +22,24 @@ const Button: React.FC<ButtonProps> = ({
     disabled = false,
     type = 'button',
     className = '',
+    target, // Add target prop support
 }) => {
     const baseClass = `btn btn-${variant} btn-${size}`;
     const classes = `${baseClass} ${className}`.trim();
 
     if (href) {
+        // Use Link for internal routes
+        if (href.startsWith('/')) {
+            return (
+                <Link to={href} className={classes}>
+                    {children}
+                </Link>
+            );
+        }
+
+        // Use standard anchor for external links
         return (
-            <a href={href} className={classes}>
+            <a href={href} className={classes} target={target} rel={target === '_blank' ? 'noopener noreferrer' : undefined}>
                 {children}
             </a>
         );
