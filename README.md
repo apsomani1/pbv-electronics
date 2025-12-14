@@ -134,10 +134,7 @@ The contact form sends emails to **somanianiket777@gmail.com**.
 
 To enable email functionality:
 1. Create a free EmailJS account at https://www.emailjs.com/
-2. Follow the detailed setup guide in [`EMAILJS_SETUP.md`](./EMAILJS_SETUP.md)
 3. Update the credentials in `src/pages/ContactPage.tsx` (lines 108-110)
-
-See [`CONTACT_INTEGRATION_SUMMARY.md`](./CONTACT_INTEGRATION_SUMMARY.md) for complete details.
 
 ### Update Contact Information
 
