@@ -1,0 +1,146 @@
+.divisions-page {
+    min-height: 100vh;
+}
+
+.divisions-hero {
+    padding: var(--space-5xl) 0;
+}
+
+.divisions-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-3xl);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.division-large-card {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-2xl);
+    padding: var(--space-3xl);
+    text-decoration: none;
+    transition: all var(--transition-base);
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--md-elevation-1);
+    width: 100%;
+    min-width: 0;
+}
+
+.division-large-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--division-color, var(--md-primary-50));
+    transform: scaleY(0);
+    transition: transform var(--transition-base);
+}
+
+.division-large-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--md-elevation-4);
+    border-color: var(--division-color, var(--md-primary-50));
+}
+
+.division-large-card:hover::before {
+    transform: scaleY(1);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.division-large-card.fade-in-on-scroll {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.division-card-inner {
+    display: flex;
+    gap: var(--space-2xl);
+    align-items: flex-start;
+}
+
+.division-icon-large {
+    font-size: 4rem;
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, var(--division-color, var(--md-primary-50)), var(--md-secondary-60));
+    border-radius: var(--radius-xl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--md-elevation-2);
+}
+
+.division-content {
+    flex: 1;
+}
+
+.division-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: var(--space-sm);
+}
+
+.division-tagline {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--division-color, var(--md-primary-50));
+    margin-bottom: var(--space-md);
+}
+
+.division-description {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: var(--space-lg);
+}
+
+.division-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--division-color, var(--md-primary-50));
+    font-weight: 600;
+    font-size: 1rem;
+    transition: gap var(--transition-fast);
+}
+
+.division-large-card:hover .division-cta {
+    gap: 1rem;
+    color: var(--division-color, var(--md-primary-40));
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .divisions-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-2xl);
+    }
+}
+
+@media (max-width: 768px) {
+    .division-card-inner {
+        flex-direction: column;
+        gap: var(--space-lg);
+    }
+
+    .division-icon-large {
+        width: 80px;
+        height: 80px;
+        font-size: 3rem;
+    }
+
+    .division-title {
+        font-size: 1.5rem;
+    }
+
+    .division-large-card {
+        padding: var(--space-2xl);
+    }
+}

@@ -1,0 +1,277 @@
+/* Shared styles for all division pages */
+
+.division-page {
+    min-height: 100vh;
+}
+
+/* Hero Section */
+.division-hero {
+    padding: var(--space-5xl) 0;
+}
+
+.division-hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.division-icon-hero {
+    font-size: 5rem;
+    margin-bottom: var(--space-lg);
+}
+
+.division-hero h1 {
+    color: var(--text-inverse);
+    margin-bottom: var(--space-md);
+}
+
+.division-hero-tagline {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--md-secondary-70);
+    margin-bottom: var(--space-lg);
+}
+
+.division-hero-description {
+    font-size: 1.125rem;
+    color: var(--md-neutral-60);
+    line-height: 1.7;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Content Section */
+.content-section {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Features Grid */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+    margin-top: var(--space-3xl);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-md);
+    font-size: 1rem;
+    color: var(--text-primary);
+    opacity: 0;
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.feature-item:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.feature-item:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.feature-item:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.feature-item:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.feature-item:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.feature-item:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+.feature-check {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background: var(--md-secondary-50);
+    color: white;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 0.875rem;
+    flex-shrink: 0;
+}
+
+/* Products Grid */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-2xl);
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.product-badge {
+    display: inline-block;
+    padding: var(--space-xs) var(--space-md);
+    background: linear-gradient(135deg, var(--md-primary-40), var(--md-secondary-60));
+    color: white;
+    border-radius: var(--radius-full);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    align-self: flex-start;
+}
+
+.product-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.product-description {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Division CTA */
+.division-cta {
+    padding: var(--space-5xl) 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.division-cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 30%, rgba(6, 182, 212, 0.15) 0%, transparent 60%),
+        radial-gradient(circle at 70% 70%, rgba(249, 115, 22, 0.1) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.division-cta .text-center {
+    position: relative;
+    z-index: 1;
+}
+
+.division-cta h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--text-inverse);
+    margin-bottom: var(--space-2xl);
+    line-height: 1.2;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-subtitle {
+    font-size: 1.25rem;
+    color: var(--md-neutral-80);
+    max-width: 750px;
+    margin: 0 auto;
+    line-height: 1.7;
+    font-weight: 400;
+    margin-bottom: var(--space-4xl);
+}
+
+.cta-buttons {
+    display: flex;
+    gap: var(--space-xl);
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: var(--space-3xl);
+}
+
+.cta-buttons .btn {
+    min-width: 240px;
+    font-size: 1.125rem;
+    padding: 1.125rem 2.5rem;
+}
+
+.cta-buttons .btn-primary {
+    background: linear-gradient(135deg, white, var(--md-neutral-90));
+    color: var(--md-primary-20);
+    border-color: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    font-weight: 700;
+}
+
+.cta-buttons .btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+    background: white;
+}
+
+.cta-buttons .btn-outline {
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--text-inverse);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    font-weight: 600;
+}
+
+.cta-buttons .btn-outline:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.6);
+    transform: translateY(-3px);
+}
+
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .division-icon-hero {
+        font-size: 4rem;
+    }
+
+    .division-hero h1 {
+        font-size: 2rem;
+    }
+
+    .division-hero-tagline {
+        font-size: 1.125rem;
+    }
+
+    .division-hero-description {
+        font-size: 1rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .division-cta h2 {
+        font-size: 2rem;
+    }
+
+    .cta-subtitle {
+        font-size: 1rem;
+    }
+
+    .cta-buttons .btn {
+        min-width: 200px;
+        font-size: 1rem;
+        padding: 1rem 2rem;
+    }
+}

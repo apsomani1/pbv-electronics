@@ -1,0 +1,67 @@
+.section {
+    padding: var(--space-4xl) 0;
+}
+
+.section-white {
+    background: var(--bg-primary);
+}
+
+.section-gray {
+    background: var(--bg-surface);
+}
+
+.section-dark {
+    background: var(--md-neutral-10);
+    color: var(--text-inverse);
+}
+
+.section-dark h1,
+.section-dark h2,
+.section-dark h3,
+.section-dark h4,
+.section-dark h5,
+.section-dark h6 {
+    color: var(--text-inverse);
+}
+
+.section-dark p {
+    color: var(--md-neutral-90);
+}
+
+.section-gradient {
+    background: linear-gradient(135deg, var(--md-primary-20) 0%, var(--md-primary-40) 100%);
+    color: var(--text-inverse);
+    position: relative;
+    overflow: hidden;
+}
+
+.section-gradient::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 20%, rgba(var(--md-secondary-60-rgb, 0, 162, 143), 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(var(--md-tertiary-60-rgb, 238, 107, 17), 0.1) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.section-gradient h1,
+.section-gradient h2,
+.section-gradient h3,
+.section-gradient h4,
+.section-gradient h5,
+.section-gradient h6 {
+    color: var(--text-inverse);
+}
+
+.section-gradient p {
+    color: var(--md-neutral-95);
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: var(--space-3xl) 0;
+    }
+}
