@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Section from '../components/Section';
+import SEO from '../components/SEO';
 import './DivisionsPage.css';
 
 const DivisionsPage: React.FC = () => {
@@ -45,6 +46,10 @@ const DivisionsPage: React.FC = () => {
 
     return (
         <div className="divisions-page">
+            <SEO
+                title="Our Divisions & Expertise"
+                description="Explore our specialized divisions: Energy Controls, Embedded Devices, Software Solutions, and Industrial Automation."
+            />
             {/* Hero */}
             <Section background="gradient" className="divisions-hero">
                 <div className="text-center">

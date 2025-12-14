@@ -1,6 +1,7 @@
 import React from 'react';
 import Section from '../components/Section';
 import Card from '../components/Card';
+import SEO from '../components/SEO';
 import './AboutPage.css';
 
 const AboutPage: React.FC = () => {
@@ -29,6 +30,10 @@ const AboutPage: React.FC = () => {
 
     return (
         <div className="about-page">
+            <SEO
+                title="About Us - Reliability & Innovation"
+                description="PBV Electronics is a leading Indian company specializing in smart energy solutions, embedded systems, and industrial automation."
+            />
             {/* Hero */}
             <Section background="gradient" className="about-hero">
                 <div className="text-center">

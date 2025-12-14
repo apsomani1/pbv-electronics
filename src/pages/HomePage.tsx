@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Section from '../components/Section';
 import Button from '../components/Button';
 import Card from '../components/Card';
+import SEO from '../components/SEO';
 import './HomePage.css';
 
 const HomePage: React.FC = () => {
@@ -57,6 +58,11 @@ const HomePage: React.FC = () => {
 
     return (
         <div className="home-page">
+            <SEO
+                title="Industrial Electronics, Embedded Systems & Automation"
+                description="PBV Electronics engineers reliable solutions for solar power, embedded systems, and industrial automation. Trusted by industries for custom electronic controls and IoT."
+                keywords="PBV Electronics, industrial control, solar power management, embedded systems India, IoT gateways, automation solutions"
+            />
             {/* Hero Section */}
             <Section background="gradient" className="hero-section">
                 <div className="hero-content">
