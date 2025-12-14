@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://apsomani1.github.io/pvb-electronics/sitemap.xml
+Sitemap: https://apsomani1.github.io/pbv-electronics/sitemap.xml
