@@ -62,7 +62,7 @@ const HomePage: React.FC = () => {
                 <div className="hero-content">
                     <div className="hero-text">
                         <h1 className="hero-title">
-                            Smart Energy, Embedded & Industrial Control Solutions
+                            PBV Electronics: Smart Energy, Embedded & Industrial Control Solutions
                         </h1>
                         <p className="hero-subtitle">
                             Designing reliable electronics, embedded systems, and automation solutions
