@@ -14,7 +14,7 @@ const SEO: React.FC<SEOProps> = ({
     title,
     description,
     keywords,
-    image = 'https://apsomani1.github.io/pvb-electronics/og-image.png',
+    image = 'https://apsomani1.github.io/pbv-electronics/og-image.png',
     url,
     type = 'website'
 }) => {

@@ -6,8 +6,8 @@ This document provides a comprehensive technical overview of the PBV Electronics
 
 *   **Project Name:** PBV Electronics Website
 *   **Purpose:** Corporate B2B website for PBV Electronics Pvt. Ltd. showcasing divisions, products, and services.
-*   **Repo:** [https://github.com/apsomani1/pvb-electronics](https://github.com/apsomani1/pvb-electronics)
-*   **Live URL:** [https://apsomani1.github.io/pvb-electronics/](https://apsomani1.github.io/pvb-electronics/)
+*   **Repo:** [https://github.com/apsomani1/pbv-electronics](https://github.com/apsomani1/pbv-electronics)
+*   **Live URL:** [https://apsomani1.github.io/pbv-electronics/](https://apsomani1.github.io/pbv-electronics/)
 
 ### Technology Stack
 
@@ -87,8 +87,8 @@ Components are built to be **stateless** and **controlled** where possible.
 
 ### Installation
 ```bash
-git clone https://github.com/apsomani1/pvb-electronics.git
-cd pvb-electronics
+git clone https://github.com/apsomani1/pbv-electronics.git
+cd pbv-electronics
 npm install
 ```
 
@@ -123,11 +123,11 @@ The project is configured for automated deployment to GitHub Pages.
     ```bash
     npm run deploy
     ```
-4.  The site updates at [https://apsomani1.github.io/pvb-electronics/](https://apsomani1.github.io/pvb-electronics/).
+4.  The site updates at [https://apsomani1.github.io/pbv-electronics/](https://apsomani1.github.io/pbv-electronics/).
 
 ### Important Configuration
-*   **`package.json`**: `homepage` is set to `https://apsomani1.github.io/pvb-electronics`.
-*   **`vite.config.ts`**: `base` is set to `/pvb-electronics/` to ensure assets load correctly from the subdirectory.
+*   **`package.json`**: `homepage` is set to `https://apsomani1.github.io/pbv-electronics`.
+*   **`vite.config.ts`**: `base` is set to `/pbv-electronics/` to ensure assets load correctly from the subdirectory.
 
 ---
 

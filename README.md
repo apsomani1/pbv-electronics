@@ -41,13 +41,13 @@ Before you begin, ensure you have the following software installed on your compu
 Open your terminal (Command Prompt, PowerShell, or Terminal) and run the following command to download (clone) this repository to your computer:
 
 ```bash
-git clone https://github.com/apsomani1/pvb-electronics.git
+git clone https://github.com/apsomani1/pbv-electronics.git
 ```
 
 Then, navigate into the project folder:
 
 ```bash
-cd pvb-electronics
+cd pbv-electronics
 ```
 
 ### 3. Installing Dependencies
