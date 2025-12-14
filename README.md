@@ -68,6 +68,7 @@ npm start
 
 **What happens next?**
 - The terminal will show a local address, usually `http://localhost:5173/`.
+- It will also show a **Network** address (e.g., `http://192.168.x.x:5173/`) which you can use to view the website on other devices (like your phone) connected to the same WiFi.
 - Open your web browser and execute that URL.
 - You should see the PBV Electronics website running!
 
