@@ -21,35 +21,78 @@ Professional B2B technology website for PBV Electronics built with React, TypeSc
 - **React Router v6** - Client-side routing
 - **Vanilla CSS** - Styling with CSS variables
 
-## Getting Started
+## Getting Started Guide
 
-### Prerequisites
+This guide will help you set up the project on your local machine for development and testing purposes.
 
-- Node.js 16+ and npm
+### 1. Prerequisites (What you need installed)
 
-### Installation
+Before you begin, ensure you have the following software installed on your computer:
 
-1. Install dependencies:
+*   **Node.js**: This is the runtime environment required to run the project.
+    *   [Download and Install Node.js](https://nodejs.org/) (Recommended: **LTS version**, which is currently v18 or v20).
+*   **Git**: Version control system to download the code.
+    *   [Download and Install Git](https://git-scm.com/downloads)
+
+### 2. Downloading the Code
+
+Open your terminal (Command Prompt, PowerShell, or Terminal) and run the following command to download (clone) this repository to your computer:
+
+```bash
+git clone https://github.com/apsomani1/pvb-electronics.git
+```
+
+Then, navigate into the project folder:
+
+```bash
+cd pvb-electronics
+```
+
+### 3. Installing Dependencies
+
+This project uses various external libraries (dependencies) to work. You need to install them before running the project. Run this command in your project folder:
+
 ```bash
 npm install
 ```
+*This may take a few minutes depending on your internet connection.*
 
-2. Start development server:
+### 4. Running the Website Locally (Development Mode)
+
+To start the website on your local computer so you can make changes and see them instantly:
+
 ```bash
 npm start
-# or
-npm run dev
 ```
+*Alternatively, you can skip the alias and run `npm run dev` directly.*
 
-3. Build for production:
+**What happens next?**
+- The terminal will show a local address, usually `http://localhost:5173/`.
+- Open your web browser and execute that URL.
+- You should see the PBV Electronics website running!
+
+### 5. Building for Production (Deployment)
+
+When you are ready to publish the website to the internet, you need to create a "production build". This optimizes the code for faster loading speeds.
+
+Run this command:
+
 ```bash
 npm run build
 ```
 
-4. Preview production build:
+**Output:**
+- This will create a `dist` folder in your project directory.
+- The `dist` folder contains the final HTML, CSS, and JavaScript files ready for deployment to hosting providers like Vercel, Netlify, or your own server.
+
+### 6. Previewing the Production Build
+
+To verify that your production (optimized) build looks correct locally before uploading it:
+
 ```bash
 npm run preview
 ```
+This serves the contents of the `dist` folder similarly to how a real web server would.
 
 ## Project Structure
 
