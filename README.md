@@ -21,6 +21,8 @@ Professional B2B technology website for PBV Electronics built with React, TypeSc
 - **React Router v6** - Client-side routing
 - **Vanilla CSS** - Styling with CSS variables
 
+> **📘 Documentation**: For a deep dive into the architecture, component design, and valid deployment strategies, please read our [Technical Documentation](./TECHNICAL_DOCUMENTATION.md).
+
 ## Getting Started Guide
 
 This guide will help you set up the project on your local machine for development and testing purposes.
